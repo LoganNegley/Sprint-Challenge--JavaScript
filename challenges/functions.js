@@ -7,8 +7,8 @@
  * The consume function should return the invocation of cb, passing a and b into cb as arguments
  */
 
-function consume(a, b, callback) {
-  callback();
+function consume(a, b, cb) {
+  return cb(a, b);
 }
 
 /* Step 2: Create several functions to callback with consume();
@@ -16,11 +16,11 @@ function consume(a, b, callback) {
  * Create a function named multiply that returns the product of two numbers
  * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
  */
-function add() {
+function add(a, b) {
   return a + b;
 }
 
-function multiply() {
+function multiply(a, b) {
   return a * b;
 }
 
@@ -36,7 +36,7 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 // ==== Closures ====
 
 // Explain in your own words why nestedfunction can access the variable internal.
-using closures and nesting inner funcitons gives them access to the outer functions scope. The combination is known as bundling them together or enclosed
+//using closures and nesting inner funcitons gives them access to the outer functions scope. The combination is known as bundling them together or enclosed
 
 // Explanation:
 
