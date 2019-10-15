@@ -1,4 +1,4 @@
-class CuboidMaker {
+class CuboidMakers {
   constructor(item) {
     this.length = item.length;
     this.width = item.width;
@@ -18,7 +18,7 @@ class CuboidMaker {
   }
 }
 
-const cuboid = new CuboidMaker({
+const cuboids = new CuboidMakers({
   length: 4,
   width: 5,
   height: 5
